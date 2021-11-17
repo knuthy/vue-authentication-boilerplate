@@ -1,0 +1,95 @@
+/*
+    Component styling
+*/
+
+/* Bootstrap fixes */
+#login, .row, .col, .row> div {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    border: 1px solid var(--secondary-color);
+    background: var(--highlight-color);
+    color: var(--text-title-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+#login {
+    display: grid;
+    height: 100%;
+}
+
+#login .container {
+    background-color: var(--secondary-color);
+    width: 20vw;
+    height: 45vh;
+    margin: auto;
+    border-radius: 6px;
+    display: grid;
+}
+
+#login .container .content {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#login .container .content .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--highlight-color);
+}
+
+#login .container .content input {
+    background: var(--background-color)!important;
+    border: 2px solid #1F2225;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 1rem;
+    height: 3.5rem;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0.75rem 0;
+}
+
+#login .container .content input:active, #login .container .content input:hover, #login .container .content input:focus {
+    background: #151719!important;
+    border: 2px solid #1F2225;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 1rem;
+    height: 3.5rem;
+    box-shadow: none;
+}
+
+#login .container .content .sub {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    cursor: pointer;
+    color: var(--text-title-color);
+    text-decoration: none!important;
+}
+
+#login .error {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 22vh;
+    color: red;
+    opacity: 0.7;
+    transition: all 0.25s ease-in-out;
+}

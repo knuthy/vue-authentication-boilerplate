@@ -1,0 +1,73 @@
+/*
+    Component styling
+*/
+
+/* Bootstrap fixes */
+#profile, .row, .col, .row> div {
+    padding: 0;
+    margin: 0;
+}
+
+.button {
+    border: 1px solid var(--secondary-color);
+    background: var(--highlight-color);
+    color: var(--text-title-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+#profile {
+    display: grid;
+    height: 100%;
+}
+
+#profile .container {
+    background-color: var(--secondary-color);
+    width: 20vw;
+    height: 45vh;
+    margin: auto;
+    border-radius: 6px;
+    display: grid;
+}
+
+#profile .container .content {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#profile .container .content span {
+    display: block;
+}
+
+#profile .container .content .title {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--highlight-color);
+}
+
+#profile .container .content .sub {
+    margin: 1.5rem 0;
+}
+
+#profile .error {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 22vh;
+    color: red;
+    opacity: 0.7;
+    transition: all 0.25s ease-in-out;
+}
